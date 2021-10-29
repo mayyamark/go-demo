@@ -16,8 +16,8 @@ func main() {
 	log.SetFlags(0)
 
 	// Request for a greeting message.
-	name := ""
-	message, err := greetings.Hello(name)
+	// message, err := greetings.Hello(name) // This would return error:		greetings: passed an empty name
+	message, err := greetings.Hello("Mayya")
 
 	// If an error was returned, print it to the console and
 	// exit the program.
